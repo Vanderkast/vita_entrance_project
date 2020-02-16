@@ -1,7 +1,6 @@
-package com.vanderkast.vita_entrance_project.actions;
+package com.vanderkast.vita_entrance_project.game;
 
-import com.vanderkast.vita_entrance_project.Stage;
-import com.vanderkast.vita_entrance_project.tiles.Tile;
+import com.vanderkast.vita_entrance_project.game.tiles.Tile;
 
 public interface Move {
     default Tile target(Stage stage, int figureY, int figureX, int deltaY, int deltaX) {

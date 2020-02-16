@@ -1,10 +1,12 @@
-package com.vanderkast.vita_entrance_project.win_conditions;
+package com.vanderkast.vita_entrance_project.impl.win_condtions;
 
-import com.vanderkast.vita_entrance_project.Action;
-import com.vanderkast.vita_entrance_project.Stage;
-import com.vanderkast.vita_entrance_project.actions.Move;
-import com.vanderkast.vita_entrance_project.tiles.FirstPlayerFigure;
-import com.vanderkast.vita_entrance_project.tiles.Tile;
+import com.vanderkast.vita_entrance_project.game.Action;
+import com.vanderkast.vita_entrance_project.game.Stage;
+import com.vanderkast.vita_entrance_project.game.Move;
+import com.vanderkast.vita_entrance_project.impl.tiles.FirstPlayerFigure;
+import com.vanderkast.vita_entrance_project.game.tiles.Figure;
+import com.vanderkast.vita_entrance_project.game.tiles.Tile;
+import com.vanderkast.vita_entrance_project.game.WinCondition;
 import jdk.internal.jline.internal.Nullable;
 
 import java.util.List;
@@ -34,13 +36,9 @@ public class SecondPlayerWinCondition implements WinCondition {
             for (int x = 0; x < horizontal.size(); x++) {
                 tile = horizontal.get(x);
                 if (tile instanceof FirstPlayerFigure)
-                    return new FigureYX(tiles.get(y).get(x), y, x);
+                    return new FigureYX((Figure) tiles.get(y).get(x), y, x);
             }
         }
         return null;
-    }
-
-    public static class NoFirstPlayerFoundException extends RuntimeException {
-
     }
 }

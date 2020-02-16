@@ -1,4 +1,4 @@
-package com.vanderkast.vita_entrance_project.actions;
+package com.vanderkast.vita_entrance_project.impl.actions;
 
 public class OutOfBoundsException extends RuntimeException {
     private final int y;

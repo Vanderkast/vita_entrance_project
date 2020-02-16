@@ -1,7 +1,7 @@
-package com.vanderkast.vita_entrance_project.actions;
+package com.vanderkast.vita_entrance_project.impl.actions;
 
-import com.vanderkast.vita_entrance_project.Stage;
-import com.vanderkast.vita_entrance_project.tiles.EmptyTile;
+import com.vanderkast.vita_entrance_project.game.Stage;
+import com.vanderkast.vita_entrance_project.game.tiles.EmptyTile;
 
 public abstract class DiagonalMove extends SimpleMove {
     protected DiagonalMove(int deltaY, int deltaX) {

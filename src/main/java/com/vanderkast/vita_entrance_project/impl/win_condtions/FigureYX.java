@@ -1,6 +1,6 @@
-package com.vanderkast.vita_entrance_project.win_conditions;
+package com.vanderkast.vita_entrance_project.impl.win_condtions;
 
-import com.vanderkast.vita_entrance_project.tiles.Figure;
+import com.vanderkast.vita_entrance_project.game.tiles.Figure;
 
 class FigureYX {
     Figure figure;
